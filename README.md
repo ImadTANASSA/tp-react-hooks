@@ -73,12 +73,14 @@ Pour optimiser les performances et éviter les rendus inutiles lors de saisies r
 - [ ] 2.2 Ajouter le sélecteur de langue
 - [ ] 2.3 Documenter votre solution ici
 
-_Votre réponse pour l'exercice 2 :_
+_Réponse pour l'exercice 2 :_
 
-```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
-```
+J’ai mis en place le LanguageContext pour centraliser la gestion des préférences linguistiques de l’application. Grâce à ce contexte, la langue sélectionnée peut être partagée entre les différents composants sans nécessiter de passage manuel des props à chaque niveau.
+
+J’ai également intégré un sélecteur de langue dans le composant LanguageSelector, permettant aux utilisateurs de modifier la langue de l’interface. Lorsqu’une nouvelle langue est choisie, l’état est mis à jour dans le LanguageContext, ce qui déclenche automatiquement la mise à jour des composants qui l’utilisent.
+
+![Page en français](./captures/ex2/francais.png)
+![Page en anglais](./captures/ex2/anglais.png)
 
 ### Exercice 3 : Hooks Personnalisés
 
