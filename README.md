@@ -105,12 +105,14 @@ useLocalStorage assure la gestion et la synchronisation d’un état avec le loc
 - [ ] 4.2 Implémenter la pagination
 - [ ] 4.3 Documenter votre solution ici
 
-_Votre réponse pour l'exercice 4 :_
+_Réponse pour l'exercice 4 :_
 
-```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
-```
+J'ai intégré une fonction permettant à l'utilisateur de rafraîchir la liste des produits en cliquant sur le bouton "Recharger".
+![Rechargement](./captures/ex4/rechargement.png)
+Pour gérer la pagination, j'ai utilisé le hook useState pour suivre la page active (currentPage). J'ai ensuite intégré les paramètres skip et limit dans l'appel API afin de contrôler la pagination. Le paramètre skip permet d’ignorer un certain nombre de produits en fonction de la page actuelle, tandis que limit détermine le nombre de produits à récupérer par page.
+
+J’ai également implémenté des fonctions de navigation, telles que previousPage et nextPage, qui mettent à jour la page actuelle tout en s'assurant que l'utilisateur ne dépasse pas les limites (première ou dernière page). L’interface inclut des boutons "Précédent" et "Suivant", qui se désactivent automatiquement lorsque l’utilisateur atteint les extrémités, garantissant ainsi une navigation fluide et intuitive.
+![Pagination](./captures/ex4/pagination.png)
 
 ## Rendu
 
