@@ -90,12 +90,12 @@ J’ai également intégré un sélecteur de langue dans le composant LanguageSe
 - [ ] 3.2 Créer le hook useLocalStorage
 - [ ] 3.3 Documenter votre solution ici
 
-_Votre réponse pour l'exercice 3 :_
+_Réponse pour l'exercice 3 :_
 
-```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
-```
+J’ai développé deux hooks personnalisés : useDebounce et useLocalStorage.
+
+useDebounce permet de différer la mise à jour d’une valeur jusqu’à l’expiration d’un délai défini, évitant ainsi les mises à jour trop fréquentes.
+useLocalStorage assure la gestion et la synchronisation d’un état avec le localStorage du navigateur, garantissant la persistance des données.
 
 ### Exercice 4 : Gestion Asynchrone et Pagination
 
